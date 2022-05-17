@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h4>Learn febric js with Arman</h4>
+      
+        <div class="canvasCss" >
+           <canvas id="canvas" > </canvas>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar_item">
+
+            <button onclick="ToggleMode(modes.pan)">Toggle Pan</button>
+            <button onclick="ToggleMode(modes.drawing)">Drawing</button>
+
+            <button onclick="clearCanvas(canvas)">Clear</button>
+        </div>
+    </div>
+
+    <div class="leftSideBar">
+        <div class="leftSideBar_item">
+            <input id="colorPicker" value="#000000" data-jscolor="{}">
+        </div>
+    </div>
+
+
+    <script src="lib/jscolor.min.js"></script>
+    <script src="./lib/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.min.js" integrity="sha512-nPzvcIhv7AtvjpNcnbr86eT6zGtiudLiLyVssCWLmvQHgR95VvkLX8mMpqNKWs1TG3Hnf+tvHpnGmpPS3yJIgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
