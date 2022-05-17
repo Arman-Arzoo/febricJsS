@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 !;
     padding: 0;
 }
 .container{
@@ -26,7 +26,7 @@
     position: absolute;
     background: #6D8B74;
     height: 100vh;
-    width: 100px;
+    width: 150px;
     top: 0;
 }
 .sidebar_item{
@@ -62,5 +62,14 @@
     flex-direction: column;
 }
 .leftSideBar_item input{
-    width: 50%;
+    width: 60%;
+}
+.shape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.shape button{
+    margin-top: 0.5rem;
 }

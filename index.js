@@ -91,6 +91,34 @@ const clearCanvas = (canvas) => {
         }
     })
 }
+
+const createCircle = (canvas) => {
+    const canvasCenter = canvas.getCenter();
+    const circle = new fabric.Circle({
+        radius: 50,
+        fill: "yellow",
+        top: canvasCenter.top,
+        left: canvasCenter.left,
+        originX: 'center',
+        originY: 'center'
+    })
+    canvas.add(circle)
+}
+const createRectangle = (canvas) => {
+    const canvasCenter = canvas.getCenter();
+    const rectangle = new fabric.Rect({
+        width: 100,
+        height: 100,
+        fill: "green",
+        top: canvasCenter.top,
+        left: canvasCenter.left,
+        originX: 'center',
+        originY: 'center',
+        cornerColor: 'white'
+    })
+    canvas.add(rectangle)
+
+}
 // ###########################################################################################################################################################
 
 //initialization and function calling for canvas
