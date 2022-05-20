@@ -103,6 +103,7 @@ const createCircle = (canvas) => {
         originY: 'center'
     })
     canvas.add(circle)
+    // circle.animate('angle', 45, { duration: 1000, onChange: canvas.renderAll.bind(canvas) })
 }
 const createRectangle = (canvas) => {
     const canvasCenter = canvas.getCenter();
@@ -116,7 +117,15 @@ const createRectangle = (canvas) => {
         originY: 'center',
         cornerColor: 'white'
     })
+    // rectangle.animate('angle', 45, { duration: 1000, onChange: canvas.renderAll.bind(canvas) })
     canvas.add(rectangle)
+
+    rectangle.on('selected', () => {
+
+    })
+    rectangle.on('deselected', () => {
+
+    })
 
 }
 // ###########################################################################################################################################################
